@@ -2,9 +2,11 @@
     font-weight: bold;
     float: right;
 }
+
 #logo {
-    height: 200px;
     width: 200px;
-    background: url('../assets/holberton-logo.jpg');
+    height: 200px;
+    background-image: url('../assets/holberton-logo.jpg');
     background-size: cover;
 }
+
