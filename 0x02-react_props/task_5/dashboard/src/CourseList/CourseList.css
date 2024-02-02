@@ -1,0 +1,25 @@
+.table-div {
+  border-bottom: 3px solid #e0354b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+}
+
+table {
+  width: 80%;
+  border: 2px solid #ddd;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+th,
+td {
+  width: 50%;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+tr:nth-child(2) {
+  text-align: left;
+}
