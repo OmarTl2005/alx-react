@@ -1,0 +1,29 @@
+.table-div {
+    border-bottom: 3px solid #e0354b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+}
+
+table {
+    width: 80%;
+    border: 2px solid #ddd;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  th {
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  th,
+  td {
+    width: 50%;
+  }
+  
+  tr:nth-child(2) {
+    text-align: left;
+  }
