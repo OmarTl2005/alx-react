@@ -1,11 +1,11 @@
 import React from "react";
-import Notifications from "../Notifications/Notifications";
 import Header from "../Header/Header";
-import Login from "../Login/Login";
 import Footer from "../Footer/Footer";
+import Login from "../Login/Login";
 import CourseList from "../CourseList/CourseList";
-import PropTypes from "prop-types";
+import Notifications from "../Notifications/Notifications";
 import "./App.css";
+import PropTypes from "prop-types";
 import { getLatestNotification } from "../utils/utils";
 
 class App extends React.Component {
@@ -14,7 +14,7 @@ class App extends React.Component {
     { id: 2, name: "Webpack", credit: 20 },
     { id: 3, name: "React", credit: 40 },
   ];
-  
+
   listNotifications = [
     { id: 1, type: "default", value: "New course available" },
     { id: 2, type: "urgent", value: "New resume available" },
@@ -26,16 +26,15 @@ class App extends React.Component {
       <React.Fragment>
         <div className="App">
           <div className="heading-section">
-            <Notifications listNotifications={listNotifications} />
+            <Notifications listNotifications={this.listNotifications} />
             <Header />
           </div>
-          {isLoggedIn ? <CourseList listCourses={listCourses} /> : <Login />}
+          {this.props.isLoggedIn ? <CourseList listCourses={this.listCourses} /> : <Login />}
           <Footer />
         </div>
       </React.Fragment>
     );
   }
-
 }
 
 App.defaultProps = {
