@@ -6,7 +6,7 @@ function CourseListRow({ isHeader, textFirstCell, textSecondCell }) {
     <tr style={{backgroundColor: "#f5f5f5ab"}}>
       {isHeader ? (
         textSecondCell === null ? (
-          <th colSpan={2}>{textFirstCell}</th>
+          <th style={{backgroundColor: "#deb5b545"}} colSpan={2}>{textFirstCell}</th>
         ) : (
           <>
             <th>{textFirstCell}</th>
